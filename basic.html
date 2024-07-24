@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <title> HTML NOTES</title>
+        <meta name="description" content="html cheet sheet">
+        <meta charset="utf-8">
+        
+        <meta name="robots" contents="">
+        
+        <link rel="icon" href="/html/Notes/web title page logo.png" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="struct.css">
+         
+    </head>
+    <body>
+        <!--
+            cntrl+u to view html page or right click and select view page source
+            adding link-->
+        <a 
+        target="_blank"
+        href="http://kaviyapriya.carrd.co" style="color:rgb(231, 27, 183)">
+            <b>"Using (a) tag to anchor another webpage using text"</b>
+        </a>
+        <br>
+        <p>with the (a) tag you can nest a image so that if you click the image it will directed to the link</p>
+        
+        <img class="pinkie"
+        src="https://cdns.iconmonstr.com/wp-content/releases/preview/7.3.0/240/iconmonstr-star-lined.png" 
+        alt="icon"
+        width="20px"
+        height="20px"
+        >
+
+        
+        </a>
+        <a href="youtube.com">click here to visit youtube</a>
+        <br>
+        <br>
+        <img  
+        src="https://beautifuldawndesigns.net/wp-content/uploads/2022/04/anime-girl-drawing9.jpeg" 
+        alt="image of anime girl" 
+         height="230",width="230">
+        <p style="font-size: 28px;font-style: italic;color:rgb(231, 27, 183)"><b>BASICS :</b> </p>
+        <p >
+        <h3>How to use style attribute : </h3>
+        we can use style attribute and add many functionalities to our webpage i.e: to change 
+        the font size to the whole para use font-size:30px and to change the font style use font-style as a value whereas
+        style is a name so every attribute comes under the syntax of (name=value) so for style name the value have a 
+        particular syntax called (property:specification) <br><br>i.e: (font-size:30px) here px refers to pixels,(font-style:<i>italic</i>) 
+        after every value you should use (;) to differentiate the (property:specification). <br><br>
+        there also exist another important value that is color which let the user to change the 
+        <b style="color:rgb(231, 27, 183)">color</b>
+        here the colour of the color text is changed due to the style attribute with color value.</p>
+        <h5><b>TAGS FOR FONT STYLING :</b></h5>
+        <P style="color:rgb(231, 27, 183)">
+            we can able to change the font style by using specific tags like <i>i for italic</i>, <b>b for bold</b>, 
+            to make the font bold u can also use <strong>strong tag</strong>, to make the font look small use <small>
+            small tag
+            </small>, <em>em tag change the font style like this</em>, and to hightlight a text in yellow colour use <mark>mark tag
+            </mark>to cross the text use <del>del tag</del>  => del tag. 
+
+        
+        </P>
+        <p style="background-color: rgb(231, 27, 183);">
+            <b>STEPS TO ADD VIDEO TO THE WEBPAGE USING HTML :
+
+            </b> <br>
+            <ol>
+                <li> add a video tag</li>
+                <li>use a attribute with no value called controls to 
+                    control the video like pausing ,playing ets...
+                </li>
+                <li>also add autoplay attribute which also
+                    don't have value.
+                </li>
+                <li>there is another way to provide the source then 
+                    using the src attribute inside the open video tag that
+                    is inside the content of video tag use source tag and that 
+                    also have a attribute called src and you have to input the 
+                    type of the video for example if it is mp4 file put  "video/mp4".
+                </li>
+                <li>sometime mp4 may not be supported while during that time 
+                    add multiple source tag inside the content space of the video tag 
+                    ,the one that supported will play
+
+                </li>
+                <li>mp4,OGG,webm are the most supported video format</li>
+           
+        </p>
+
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yfN_InxAoDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+            title attribute facilitates the option of using toottip while hovering the mouse to the text.
+
+        </p>
+        <p title="I'm a tooltip" 
+         >
+        Mouse over this para to display the tit
+        le attribute as a tooltip
+        </p>
+        <h1> 
+            <i style="color:rgb(231, 27, 183)">HOW TO CREATE A FORM :</i>
+        </h1>
+        <form action="/html/contact.html">
+            <label for="user">username</label>
+            <input required name="user" type="text" id="user"/>
+            <label for="email">email id</label>
+            <input required name="email" type="email" id="email"/>
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input required type="submit" value="send"/><br/>
+            <button type="submit">
+                Submit
+            </button>
+        </form> <br><br>
+        <h3>steps : </h3>
+        <ol>
+            <li>use (form) tag it will have a attribute alled action which specifies
+                the action of the form once it get submitted
+            </li>
+            <li>use label tag as that is the text shown to the user 
+                to enter data in the corresponding field.
+            </li>
+            <li>inside the label opening tag there is a attribute called 
+                for which refers to the id of the input element.each input element
+                is will get input and to bind to the label name.
+            </li>
+            <li>after a label tag create a input tag with its own id and 
+                with the type of the input like text,email and more.
+            </li>
+            <li>create a button using the (button) tag with the type submit 
+                which will submit the inputted value.
+            
+            </li>
+            <li>the form tage have a attribute called (action). we can use action to 
+                navigate to another page.
+            </li>
+            <li>type,name and id should be a compulsary attribute inside the input tag</li>
+            <li>the reason we use name attribute in input tag is the only field that
+                get submitted to the form should have name.
+            </li>
+            <li>name is a compulsary attribute in a input tag as it will ensure that
+                the data will sent to the server. name having input tag only will get
+                submitted.
+            </li>
+        </ol>
+        <p>we can also use(a) tag to target to the another page by giving the 
+            name of the page to the href attribute use "/" and by using the target 
+            = "_blank" it will open the link in new tab.</p>
+            <p>to create a dropdown u gotta use select tag and inside the content
+                use option tag</p>
+            <select name="products" id="product">
+                <option value="">Laptop</option> <!-- the value here will send to the server we can input any thing in that place but specifically
+                we can input lenovo for laptop ,apple for mobile and more here and the server will show like products= lenovo if u'd selected 
+            laptop-->
+                <option value="">Mobile</option>
+                <option value="">Tablet</option>
+                <option value="">watch</option>
+            </select>
+           <form action="/html/contact.html">
+            <textarea required name="message" id="message" cols="30" rows="10"></textarea>
+            <input autofocus type="submit" value="send"/><br/>
+           </form>
+           <!--we can limit the number of text added to the input inside the input tag by using the attribute maxlength="12 or anything" if u type
+        more than the limit it will limit u from typing u can also add minlength and maxlength at the same time inside the input tag minlength="5"
+     u can turn off the auto complete option that is popping on the screen defaultly without any code while filling the email that is by adding the 
+    attribute autocomplete inside the input tag set it's value to off
+
+instead of adding autocomplete attribute and the value off inside the form tag's content like using it in input tags use it directly inside the
+form tag so it will not facilitate the option of autocomplete to the users in any field that should be inputted
+ to add placeholder text inside the field where user wanna input placeholder attribute inside the input field and type what should be shown on the 
+ field like placeholder="characters should be 5min should be put inside the opening input tag"
+
+adding autofocus to the input tag will directly focus on the input box after the page is loaded-->
+<!-- use # as a value for href attribute in (a) tag to implies a empty link where it is not directed any where.
+aside tag creates a box at the side of the article-->
+            
+<iframe src="https://auth-us.surveymonkey.com/login?state=hKFo2SA3UE9kN1lNeTNYUjRHYW9QLVhtNkdfdzZvb1IyOENScqFupWxvZ2luo3RpZNkgM29HYmRIMlYxaDYwcVlzR1NHNGx4dGszRWdSZmIxZmajY2lk2SBzQTM0RFVtUUE0RUlySkM3cTlRdVBDZjFUNzc4QmZMdg&client=sA34DUmQA4EIrJC7q9QuPCf1T778BfLv&protocol=oauth2&prompt=login&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Fwww.surveymonkey.com%2Flogin%2Fcallback&ep=%2Fhome%2F&sm.locale=en&sm.country=IN&sm.subdomain=www&sm.social_popup=false&response_type=code&response_mode=query&nonce=TlhzdV8xQUVFalhqbkFmbnpFdHNibndiM2oxTFRufmJQMTdJOFNpTWhNcw%3D%3D&code_challenge=0_1TmYLBhMpcSpLgrhdINt_A8RVNOazbtv9SGkToaXQ&code_challenge_method=S256&auth0Client=eyJuYW1lIjoiYXV0aDAtc3BhLWpzIiwidmVyc2lvbiI6IjIuMC4xIn0%3D#/login" frameborder="0"  height="1000" width ="1000"></iframe>
+        </p>
+<section>
+    <figure>
+        <img 
+        src="" alt="">
+        <img src="" alt="">
+        <figcaption>
+            
+        </figcaption>
+    </figure>
+</section>
+<aside>
+
+</aside>
+    </body>
+</html>
